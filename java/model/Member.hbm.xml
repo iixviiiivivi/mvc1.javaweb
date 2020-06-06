@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2020/1/18 ?U?? 04:19:53 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="model.Member" table="MEMBER">
+        <id name="memberID" type="java.lang.Integer">
+            <column name="MEMBERID" />
+            <generator class="native" />
+        </id>
+        <property name="username" type="java.lang.String">
+            <column name="USERNAME" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <property name="firstName" type="java.lang.String">
+            <column name="FIRSTNAME" />
+        </property>
+        <property name="lastName" type="java.lang.String">
+            <column name="LASTNAME" />
+        </property>
+        <property name="sex" type="java.lang.String">
+            <column name="SEX" />
+        </property>
+        <property name="birthday" type="java.lang.String">
+            <column name="BIRTHDAY" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+        <property name="mobile" type="java.lang.String">
+            <column name="MOBILE" />
+        </property>
+        <property name="country" type="java.lang.String">
+            <column name="COUNTRY" />
+        </property>
+        <property name="city" type="java.lang.String">
+            <column name="CITY" />
+        </property>
+        <property name="district" type="java.lang.String">
+            <column name="DISTRICT" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+        <property name="promotion" type="java.lang.String">
+            <column name="PROMOTION" />
+        </property>
+        <property name="type" type="java.lang.String">
+            <column name="TYPE" />
+        </property>
+        <property name="registerDate" type="java.lang.String">
+            <column name="REGISTERDATE" />
+        </property>
+        <property name="updateDate" type="java.lang.String">
+            <column name="UPDATEDATE" />
+        </property>
+        <property name="agreement" type="java.lang.String">
+            <column name="AGREEMENT" />
+        </property>
+        <property name="memberStatus" type="java.lang.String">
+            <column name="MEMBERSTATUS" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+#purchaseSystem {
+	color: black;
+	background-color: #F5F5F7;
+}
+
+h3 {
+	margin-bottom: 15px;
+}
+
+table {
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+table, th, tr, td {
+	border: 1px solid black;
+}
+
+th {
+	height: 35px;
+}
+
+td {
+	height: 30px;
+}
+
+tr:nth-child(odd) {
+	background-color: #D2D2D2;
+}
+
+tr:hover {
+	background-color: lightgreen;
+}
+
+button {
+	width: 80%;
+	background-color: #0070C9;
+	color: white;
+	border-radius: 5px;
+	padding: 3px 0px;
+}
+
+p {
+	text-align: center;
+}

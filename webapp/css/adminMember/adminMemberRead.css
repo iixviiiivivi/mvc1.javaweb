@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+#memberSystem{
+	color:black;
+	background-color:#F5F5F7	
+}
+
+h3{
+	margin-bottom:15px;
+}
+
+table{
+	width:100%;
+	border:1px solid black;
+	border-collapse: collapse;
+}
+
+td, th{
+	border:1px solid black;
+	text-align:center;
+}
+
+th{
+	height:35px;
+}
+
+td{
+	height:25px;
+}
+
+tr:nth-child(odd){
+	background-color:#D2D2D2;
+}
+
+
+tr:hover{
+	background-color:lightgreen;
+}
+
+tr td a{
+	text-decoration:none;
+}
+
+tr td a:visited{
+	color:#0000EE;
+}
+
+select{
+	text-align:center;
+}
+
+button{
+	width:40%;
+	background-color:#0070C9;
+	color:white;
+	border-radius:5px;
+	padding:3px 0px;
+}
+
+p{
+	text-align:center;
+}

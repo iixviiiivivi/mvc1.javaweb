@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+h3 {
+	margin-bottom: 15px;
+}
+
+h4 {
+	margin-top: 15px;
+}
+
+main {
+	margin-bottom: 60px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 570px;
+	margin-bottom: 15px;
+}
+
+table, tr, td {
+	border: 1px solid black;
+	padding: 3px 5px;
+}
+
+button {
+	width: 570px;
+	height: 50px;
+	background-color: #0070C9;
+	color: white;
+	border-radius: 10px;
+}
+
+.sizes {
+	display: inline-block;
+	padding: 7px;
+	background-color: darkgray;
+	color: white;
+}
+
+#tblBuy, #tblBuy tr, #tblBuy td {
+	border: none;
+	width: auto;
+}

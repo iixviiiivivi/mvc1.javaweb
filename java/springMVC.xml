@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
+
+	<!-- 宣告spring的front controller到指定的資料夾中尋找對應的classes與methods -->
+	<context:component-scan base-package="controller,dao,model,factory"></context:component-scan>
+
+	<!-- 取得靜態資源連結的資料 -->
+	<mvc:default-servlet-handler />
+	<!-- 設定去得靜態資源連結後需要設定此程式碼，controller跳轉才會正常執行 -->
+	<mvc:annotation-driven />
+
+	<!-- 設定尋找與回傳view的prefix與suffix格式 -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="5242880"></property>
+	</bean>	
+	
+</beans>
